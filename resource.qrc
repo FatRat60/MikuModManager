@@ -1,2 +1,5 @@
 <RCC>
+  <qresource prefix="icons">
+    <file>resources/mikuIcon.png</file>
+  </qresource>
 </RCC>

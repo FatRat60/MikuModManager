@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Miku Mod Manager</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/icons/resources/mikuIcon.png</normalon>
+   </iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -24,7 +29,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>You Logged in, Nice!</string>
+     <string>Welcome to hell buddy</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -43,6 +48,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

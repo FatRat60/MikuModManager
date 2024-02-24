@@ -4,7 +4,8 @@ TARGET = mikumodmanager
 # Specify source
 SOURCES += \
     src/main.cpp \
-	src/mikulogin.cpp
+	src/mikulogin.cpp \
+	src/mikumodmanager.cpp
 
 # Specify any headers
 HEADERS +=
