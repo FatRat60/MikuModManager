@@ -7,6 +7,7 @@ SOURCES += \
     src/main.cpp
 
 # Specify any headers
+HEADERS +=
 
 # Specify any resources
 RESOURCES += resource.qrc
