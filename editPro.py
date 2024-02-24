@@ -26,7 +26,7 @@ if __name__ == "__main__":
         existsCPP = False
         for i in range(2, len(source_lines)):
             # file found
-            if source_lines[i].find(cppFileName):
+            if source_lines[i].find(cppFileName) != -1:
                 existsCPP = True
                 break 
         # need to add it to sources
@@ -45,7 +45,7 @@ if __name__ == "__main__":
             existsHFile = False
             for i in range(2, len(header_lines)):
                 # file found
-                if header_lines[i].find(filename):
+                if header_lines[i].find(filename) != -1:
                     existsHFile = True
                     break
             if not existsHFile:
@@ -61,4 +61,7 @@ if __name__ == "__main__":
             file.seek(0)
             new_contents = "\n\n".join(sections)
             file.write(new_contents)
-            file.truncate() # new contents will never be shorter but just in case  
+            file.truncate() # new contents will never be shorter but just in case
+            print(f"Source/Headers added to {FILE_NAME}")
+        else:
+            print(f"No changes made to {FILE_NAME}")
